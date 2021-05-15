@@ -3,7 +3,7 @@ import Tweets from './Tweets';
 
 function SearchUsersTweets() {
   let [recentTweets, setRecentTweets] = useState([]);
-  let [twitterUserName, setTwitterUserName] = useState('Platform9Sys');
+  let [twitterUserName, setTwitterUserName] = useState('BCCI');
   useEffect(() => {
     const apiUrl = `http://localhost:5000/search_tweet_by_usernsme?username=${twitterUserName}`;
     fetch(apiUrl, {
